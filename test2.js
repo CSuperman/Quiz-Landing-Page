@@ -61,6 +61,7 @@ function checkAnswer(event) {
         showQuestion();
     } else {
         questionElement.innerText = "Quiz completed!";
+        // redirect to rewarded results
         
         for (let i = 0; i < answerButtons.length; i++) {
             answerButtons[i].removeEventListener("click", checkAnswer);
